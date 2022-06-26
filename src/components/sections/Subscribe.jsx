@@ -1,5 +1,5 @@
 import { InputAdornment, Stack, TextField, Typography } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 
 import { useForm } from "react-hook-form";
@@ -21,6 +21,7 @@ const Subscribe = () => {
 
   const submitHandler = (data) => {
     console.log(data);
+    reset();
   };
   return (
     <Stack

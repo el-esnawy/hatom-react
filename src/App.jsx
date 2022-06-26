@@ -15,7 +15,7 @@ function App() {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     rootMargin: "10%",
   });
 
@@ -23,6 +23,7 @@ function App() {
     <>
       <Container maxWidth="xl" sx={{}}>
         <img
+          id="backgroundimage"
           src={sm ? MobileBackground : BackgroundImage}
           style={{ position: "absolute", top: 0, left: 0, width: "100%", zIndex: -1 }}
           alt="background"

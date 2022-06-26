@@ -1,32 +1,26 @@
-import { Button, Stack } from "@mui/material";
-import { Box } from "@mui/system";
+import { Button } from "@mui/material";
 import React from "react";
 
 const PrimaryButton = ({ children, sx, type, form }) => {
   return (
-    <Stack justifyContent="center" alignItems="center">
-      <Button
-        type={type}
-        form={form}
-        variant="contained"
-        sx={{
-          width: "max-content",
-          px: "12px !important",
-          py: "10px",
-          borderRadius: "4px",
-          background: "linear-gradient(to left, #133641, #46A273 )",
-          textTransform: "none",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          color: "common.white",
-          fontWeight: "normal",
-          gap: 1,
-          ...sx,
-        }}>
-        {children}
-      </Button>
-    </Stack>
+    <Button
+      type={type}
+      form={form}
+      variant="contained"
+      sx={{
+        width: "max-content",
+        color: "#FFF",
+        borderRadius: "4px",
+        background: "linear-gradient(90deg,#46a273 -.2% , #46a273 .36% , #133641 100.2%)",
+        textTransform: "none",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        gap: 4,
+        ...sx,
+      }}>
+      {children}
+    </Button>
   );
 };
 

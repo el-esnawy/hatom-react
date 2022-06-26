@@ -23,11 +23,14 @@ const Background = ({ start, entry }) => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#coin", {
+    const timeline = gsap.timeline();
+
+    timeline.to("#coin", {
       scrollTrigger: {
-        trigger: "#container",
-        start: "top top",
-        end: "bottom 10%",
+        trigger: "#backgroundimage",
+        endTrigger: "#feature",
+        start: "center center",
+        end: "center 45%",
         anticipatePin: true,
         pin: "#coin",
         scrub: true,
@@ -37,7 +40,7 @@ const Background = ({ start, entry }) => {
         ease: "steps(22)",
       },
 
-      y: "120%",
+      y: "20%",
     });
   }, []);
 
@@ -48,18 +51,6 @@ const Background = ({ start, entry }) => {
         inset: "auto 0px auto 0px",
         top: "30vw",
       }}>
-      <div
-        id="container"
-        style={{
-          // position: "fixed",
-          display: "flex",
-          justifyContent: "center",
-          width: "100%",
-          height: "70vw",
-          position: "fixed",
-          top: "30vw",
-        }}></div>
-
       <div
         ref={image}
         style={{
@@ -72,11 +63,13 @@ const Background = ({ start, entry }) => {
           id="coin"
           ref={coin}
           style={{
-            marginLeft: "5vw",
-            width: "12vw",
-            height: "12vw",
+            marginLeft: "6vw",
+            maxWidth: "270px",
+            maxHeight: "270px",
+            width: "15vw",
+            height: "15vw",
             backgroundImage: sm ? `url(${smallCoin})` : `url(${largeCoin})`,
-            backgroundSize: "cover",
+            backgroundSize: "100%",
           }}></div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
+  spacing: 1,
   breakpoints: {
     values: {
       xs: 0,
@@ -74,10 +75,11 @@ const theme = createTheme({
     },
     button: {
       fontFamily: "NueHass",
-      fontSize: "1.4rem",
-      fontWeight: "bold",
+      fontSize: "1.2rem",
+      fontWeight: 600,
+      padding: "1rem",
     },
   },
 });
-
+theme.spacing(1);
 export default theme;

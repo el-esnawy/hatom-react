@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -24,6 +25,13 @@ body {
   src: url("./assets/fonts/NeueHaasDisplay-Mediu.woff");
   font-weight: normal;
 }
+
+@font-face {
+  font-family: NueHass;
+  src: url("./assets/fonts/NeueHaasDisplay-Roman.woff");
+  font-weight: 600;
+}
+
 @font-face {
   font-family: NueHass;
   src: url("./assets/fonts/NeueHaasDisplay-Light.woff");

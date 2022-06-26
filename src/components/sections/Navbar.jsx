@@ -1,7 +1,6 @@
-import { Box, Drawer, Grid, Link, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Drawer, Link, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
-import Button from "@mui/material/Button";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import SecondaryButton from "../Buttons/SecondaryButton";
 import BurgerIcon from "../Buttons/BurgerIcon";
@@ -16,13 +15,21 @@ export const Navbar = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <Container maxWidth="xl">
-      <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ height: "66px" }}>
+    <Container sx={{ maxWidth: "1272px !important" }}>
+      <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ height: "66px", mt: 11 }}>
         {/* Logo  */}
         <Box sx={{ posisiton: "relative", zIndex: 10000 }}>
           <Link sx={{ display: "flex", justifyContent: "space-between" }} href="*" underline="none">
             <img src={logo} alt="logo" />
-            <Typography sx={{ fontFamily: "NueHass", fontWeight: "900", fontSize: "18px", color: "white", ml: "5px" }}>
+            <Typography
+              sx={{
+                fontFamily: "NueHass",
+                fontWeight: "normal",
+                fontSize: "20px",
+                color: "white",
+                ml: "5px",
+                letterSpacing: "2%s",
+              }}>
               hatom
             </Typography>
           </Link>
@@ -71,7 +78,7 @@ export const Navbar = () => {
           </Stack>
         )}
         {/* CTA Button  */}
-        <Stack direction="row" justifyContent="center" gap={1} sx={{ width: "max-content" }}>
+        <Stack direction="row" justifyContent="center" gap={6} sx={{ width: "max-content" }}>
           <PrimaryButton>
             <img src={elrond} alt="elrond" />
             Elrond

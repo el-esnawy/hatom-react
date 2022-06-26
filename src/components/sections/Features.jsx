@@ -8,45 +8,53 @@ const Features = (props, ref) => {
   const theme = useTheme();
   const lg = useMediaQuery(theme.breakpoints.down("lg"));
   return (
-    <Container maxWidth="xl" id="feature">
+    <Container maxWidth="xl" id="feature" sx={{ position: "relative" }}>
       {/*  DIVIDENDS AND CTA */}
       {!lg && (
-        <Grid container alignItems="center" justifyContent="space-between" ref={ref}>
-          <Grid item>
-            <Stack direction="row" spacing={0.5}>
-              <Typography variant="h4" sx={{}}>
-                $9,449,627.26
-              </Typography>
+        <Container maxWidth="xl" ref={ref}>
+          <Stack direction="row" justifyContent="space-between">
+            <Stack justifyContent="space-between" alignItems="center">
+              <Stack direction="row" spacing={5}>
+                <Typography variant="h4" fontWeight="normal" sx={{ fontWeight: "normal", letterSpacing: "0.5px" }}>
+                  $9,449,627.26
+                </Typography>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    display: "inline",
+                    color: "primary.main",
+                    fontWeight: "normal",
+                    letterSpacing: "0.5px",
+                  }}>
+                  Dividends
+                </Typography>
+              </Stack>
+
               <Typography
-                variant="h4"
+                variant="subtitle1"
                 sx={{
-                  display: "inline",
-                  color: "primary.main",
+                  color: "primary.contrastText",
+                  fontWeight: "normal",
+                  letterSpacing: "0.5px",
                 }}>
-                Dividends
+                Paid out to Hatom Token Holders over 3 years
               </Typography>
             </Stack>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                color: "primary.contrastText",
-                fontWeight: "normal",
-              }}>
-              Paid out to Hatom Token Holders over 3 years
-            </Typography>
-          </Grid>
-          <Grid item>
             <PrimaryButton
               sx={{
-                borderRadius: "12px",
+                borderRadius: 2,
+                lineHeight: 1,
+                fontSize: "1.8rem",
+                px: 16,
+                py: 0,
               }}>
               Buy Hatom Token
             </PrimaryButton>
-          </Grid>
-        </Grid>
+          </Stack>
+        </Container>
       )}
       {/* SECTION Header */}
-      <Stack direction="row" spacing={1} sx={{ mt: "100px" }} justifyContent={{ xs: "center", lg: "" }}>
+      <Stack direction="row" spacing={1} sx={{ mt: "100px" }} justifyContent={{ xs: "center", lg: "start" }}>
         <Typography variant="h2" sx={{ color: "#3555F7" }}>
           Features
         </Typography>
@@ -59,7 +67,7 @@ const Features = (props, ref) => {
       <Grid
         container
         rowSpacing={{ xs: 5, lg: 0 }}
-        sx={{ mt: { lg: "25px", xs: 0 }, pt: { lg: "25px", xs: 0 } }}
+        sx={{ mt: { lg: "25px", xs: 0 }, pt: { lg: "25px", xs: 0 }, position: "relative" }}
         justifyContent={{ lg: "space-between", xs: "center" }}
         alignItems={{ lg: "start", xs: "center" }}>
         <Grid
@@ -70,7 +78,7 @@ const Features = (props, ref) => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            alignItems: { xs: "center", lg: "" },
+            alignItems: { xs: "center", lg: "start" },
             gap: { xs: 5, lg: "100px" },
           }}>
           <Box>
@@ -95,20 +103,22 @@ const Features = (props, ref) => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Typography>
           </Box>
+
+          {!lg && (
+            <img
+              src={lines}
+              alt="lines"
+              style={{
+                position: "absolute",
+                left: 0,
+                right: "5%",
+                marginLeft: "auto",
+                marginRight: "auto",
+              }}
+            />
+          )}
         </Grid>
-        {!lg && (
-          <Grid
-            item
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              gap: "100px",
-              position: "relative",
-            }}>
-            <img src={lines} alt="lines" />
-          </Grid>
-        )}
+
         <Grid
           item
           xs={12}
@@ -120,7 +130,7 @@ const Features = (props, ref) => {
             alignItems: { xs: "center", lg: "start" },
           }}>
           <Box>
-            <Typography variant="h5" sx={{ fontWeight: "medium", mt: -2 }}>
+            <Typography variant="h5" sx={{ fontWeight: "medium" }}>
               Dividends
             </Typography>
             <Typography variant="subtitle1" sx={{ maxWidth: "295px", lineHeight: 1, mt: "24px" }}>
@@ -161,7 +171,7 @@ const Features = (props, ref) => {
       {lg && (
         <Grid container alignItems="center" justifyContent="center" ref={ref} mt={5}>
           <Grid item xs={12}>
-            <Stack direction="row" spacing={0.5} lignItems="center" justifyContent="center">
+            <Stack direction="row" spacing={0.5} alignItems="center" justifyContent="center">
               <Typography variant="h4" sx={{}}>
                 $9,449,627.26
               </Typography>

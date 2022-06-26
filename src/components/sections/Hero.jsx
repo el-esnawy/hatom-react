@@ -1,5 +1,5 @@
 import { Stack, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Box } from "@mui/system";
 import React from "react";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
           variant="h1"
           sx={{
             letterSpacing: "3px",
-            position: "absolute",
+            position: "relative",
             color: "common.white",
             fontWeight: 900,
             background: "linear-gradient(to left , #1B4347 30% , #3D906A )",
