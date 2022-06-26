@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hatom-react/static/css/main.871372d0.css",
-    "main.js": "/hatom-react/static/js/main.3ecdd222.js",
+    "main.css": "/hatom-react/static/css/main.0244f770.css",
+    "main.js": "/hatom-react/static/js/main.e7a4cec0.js",
     "static/media/bg.svg": "/hatom-react/static/media/bg.c0164a413872d717e429d1e9e94a889c.svg",
     "static/media/coin-sequence.png": "/hatom-react/static/media/coin-sequence.f4bdc12772514646f981.png",
     "static/media/coin-sequence-200x.png": "/hatom-react/static/media/coin-sequence-200x.0997398f29f86ea008fc.png",
@@ -11,15 +11,17 @@
     "static/media/NeueHaasDisplay-Mediu.woff": "/hatom-react/static/media/NeueHaasDisplay-Mediu.e95315c1b39a31dd7f41.woff",
     "static/media/NeueHaasDisplay-Thin.woff": "/hatom-react/static/media/NeueHaasDisplay-Thin.b89c5a5531d721e41f86.woff",
     "static/media/NeueHaasDisplay-Black.woff": "/hatom-react/static/media/NeueHaasDisplay-Black.952c6aa636a79022bdba.woff",
+    "static/media/NeueHaasDisplay-Roman.woff": "/hatom-react/static/media/NeueHaasDisplay-Roman.7e7a646f9aff78ddd67e.woff",
     "static/media/elrond-logo.svg": "/hatom-react/static/media/elrond-logo.8c2e66c1e94a8df895fa086b9dbae685.svg",
     "static/media/logo.svg": "/hatom-react/static/media/logo.75a85eb79c270d43a4c4fadc07ca0c1c.svg",
+    "static/media/secondaryButton.svg": "/hatom-react/static/media/secondaryButton.3976b24259871f785b7e34ec7e742027.svg",
     "index.html": "/hatom-react/index.html",
     "static/media/lines.svg": "/hatom-react/static/media/lines.59e878feef2751bf7bece05640cb792e.svg",
-    "main.871372d0.css.map": "/hatom-react/static/css/main.871372d0.css.map",
-    "main.3ecdd222.js.map": "/hatom-react/static/js/main.3ecdd222.js.map"
+    "main.0244f770.css.map": "/hatom-react/static/css/main.0244f770.css.map",
+    "main.e7a4cec0.js.map": "/hatom-react/static/js/main.e7a4cec0.js.map"
   },
   "entrypoints": [
-    "static/css/main.871372d0.css",
-    "static/js/main.3ecdd222.js"
+    "static/css/main.0244f770.css",
+    "static/js/main.e7a4cec0.js"
   ]
 }
